@@ -1,0 +1,32 @@
+name: 이슈 등록
+description: 기능이나 작업을 등록합니다.
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 기능 개요
+      description: 이 기능이 필요한 이유를 간단하게 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: 기능 설명
+      description: 이 기능이 어떤 기능인지 조금 더 자세히 설명해주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: 구현 방법
+      description: 어떻게 구현하면 될지 적어주세요.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 체크리스트
+      options:
+        - label: 라벨 등록
+        - label: 우선순위 등록
+        - label: 시작날짜 마감기한 등록
